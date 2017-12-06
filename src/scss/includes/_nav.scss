@@ -1,0 +1,109 @@
+#main-nav {
+    background-color: $primary-dark;
+    position: relative;
+    padding: 0.5rem;
+    z-index: 1;
+    .logo {
+        float: left;
+        img {
+            padding: 0.1rem;
+            max-width: none;
+            width: 8rem;
+        }
+    }
+    ul.nav {
+        list-style-type: none;
+        overflow: hidden;
+        padding: 0.5rem;
+        position: absolute;
+        right: 2.4rem;
+        top: 2.2rem;
+        z-index: 2;
+        background-color: #fff;
+        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+        margin: 1rem 0;
+        display: none;
+        li {
+            position: relative;
+            a {
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #333;
+                padding: 0.2rem 1rem;
+                font-size: 0.8rem;
+                margin: 0.5rem;
+                &:hover,
+                &.active,
+                &:active {
+                    color: $primary;
+                }
+            }
+        }
+        &.open {
+            display: block;
+        }
+    }
+    .toggle {
+        z-index: 3;
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 1.4rem;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+        &.change {
+            // Rotate first bar 
+            .bar1 {
+                transform: rotate(-45deg) translate(-6px, 4px);
+            } // Fade out the second bar 
+            .bar2 {
+                opacity: 0;
+            } // Rotate last bar 
+            .bar3 {
+                transform: rotate(45deg) translate(-6px, -4px);
+            }
+        }
+    }
+    &.fixed{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 55em) {
+    #main-nav {
+        // padding: 0.5rem;
+        .logo {
+            img {
+                padding: 0;
+                width: auto;
+                max-width: 100%;
+            }
+        }
+        ul.nav {
+            position: static;
+            box-shadow: none;
+            display: block;
+            background-color: $primary-dark;
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                a {
+                    color: #fff;
+                    padding: 1rem 1rem;
+                    font-size: 0.8rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .toggle {
+        display: none;
+    }
+}

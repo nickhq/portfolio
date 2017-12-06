@@ -1,0 +1,25 @@
+.button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: $primary;
+    border: 1px solid $primary;
+    outline-color: $primary;
+    color: $text-primary;
+    cursor: pointer;
+
+    &:hover{
+        background-color: fade($primary, 80%);
+        border-color: fade($primary, 80%);
+    }
+
+}
+
+.title{
+    text-transform: uppercase;
+    color: $text-primary-dark;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem 0.1rem;
+    margin: 0rem 0.1rem;
+}

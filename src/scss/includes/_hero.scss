@@ -1,0 +1,33 @@
+#hero{
+    background: #575555 url("../images/bg-header-1.jpg") no-repeat center;
+    text-align: center;
+    padding: 8rem 0;
+    min-height: calc(100vh);
+    color: #fff;
+
+    .title{
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        border-left: none;
+        border-right: none;
+        display: inline-block;
+        padding: 0.5rem 0;
+        margin: 0.2rem;
+        margin-top: 6rem;
+        font-size: 3rem;
+        color: #fff;
+    }
+    button{
+        display: block;
+        margin: 3rem auto;
+        background: transparent;
+        border-color: #fff;
+        color: #fff;
+        padding: 1rem 2rem;
+
+        &:hover{
+            background-color: #fff;
+            color: #333;
+        }
+    }
+}

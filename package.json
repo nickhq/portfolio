@@ -1,0 +1,45 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "add later"
+  },
+  "keywords": [
+    "portfolio",
+    "nixon",
+    "kosgei",
+    "resume",
+    "cv"
+  ],
+  "authors": {
+    "name": "nixon kosgei",
+    "email": "nkosgey6@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "flexboxgrid": "^6.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "browser-sync": "2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "3.9.0",
+    "gulp-header": "1.8.9",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "3.0.0"
+  }
+}

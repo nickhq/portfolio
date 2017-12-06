@@ -1,0 +1,210 @@
+/*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+ul {
+  list-style: none; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+* {
+  box-sizing: inherit; }
+  *:before, *:after {
+    box-sizing: inherit; }
+
+img,
+embed,
+object,
+audio,
+video {
+  max-width: 100%; }
+
+iframe {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+  tabletd, tableth {
+    padding: 0;
+    text-align: left; }
+
+body {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  outline-color: #2ecc71; }
+
+.box {
+  border: 1px solid red; }
+
+@media only screen and (min-width: 65rem) {
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto; } }
+
+.button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: #2ecc71;
+  border: 1px solid #2ecc71;
+  outline-color: #2ecc71;
+  color: #ffffff;
+  cursor: pointer; }
+  .button:hover {
+    background-color: fade(#2ecc71, 80%);
+    border-color: fade(#2ecc71, 80%); }
+
+.title {
+  text-transform: uppercase;
+  color: #566366;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 0.1rem;
+  margin: 0rem 0.1rem; }
+
+#hero {
+  background: #575555 url("../images/bg-header-1.jpg") no-repeat center;
+  text-align: center;
+  padding: 8rem 0;
+  min-height: calc(100vh);
+  color: #fff; }
+  #hero .title {
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-left: none;
+    border-right: none;
+    display: inline-block;
+    padding: 0.5rem 0;
+    margin: 0.2rem;
+    margin-top: 6rem;
+    font-size: 3rem;
+    color: #fff; }
+  #hero button {
+    display: block;
+    margin: 3rem auto;
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    padding: 1rem 2rem; }
+    #hero button:hover {
+      background-color: #fff;
+      color: #333; }
+
+#main-nav {
+  background-color: #252e30;
+  position: relative;
+  padding: 0.5rem;
+  z-index: 1; }
+  #main-nav .logo {
+    float: left; }
+    #main-nav .logo img {
+      padding: 0.1rem;
+      max-width: none;
+      width: 8rem; }
+  #main-nav ul.nav {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0.5rem;
+    position: absolute;
+    right: 2.4rem;
+    top: 2.2rem;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+    margin: 1rem 0;
+    display: none; }
+    #main-nav ul.nav li {
+      position: relative; }
+      #main-nav ul.nav li a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #333;
+        padding: 0.2rem 1rem;
+        font-size: 0.8rem;
+        margin: 0.5rem; }
+        #main-nav ul.nav li a:hover, #main-nav ul.nav li a.active, #main-nav ul.nav li a:active {
+          color: #2ecc71; }
+    #main-nav ul.nav.open {
+      display: block; }
+  #main-nav .toggle {
+    z-index: 3; }
+    #main-nav .toggle .bar1,
+    #main-nav .toggle .bar2,
+    #main-nav .toggle .bar3 {
+      width: 1.4rem;
+      height: 3px;
+      background-color: #fff;
+      margin: 4px 0;
+      transition: 0.4s; }
+    #main-nav .toggle.change .bar1 {
+      transform: rotate(-45deg) translate(-6px, 4px); }
+    #main-nav .toggle.change .bar2 {
+      opacity: 0; }
+    #main-nav .toggle.change .bar3 {
+      transform: rotate(45deg) translate(-6px, -4px); }
+  #main-nav.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%; }
+
+@media only screen and (min-width: 55em) {
+  #main-nav .logo img {
+    padding: 0;
+    width: auto;
+    max-width: 100%; }
+  #main-nav ul.nav {
+    position: static;
+    box-shadow: none;
+    display: block;
+    background-color: #252e30;
+    margin: 0;
+    padding: 0; }
+    #main-nav ul.nav li {
+      display: inline-block; }
+      #main-nav ul.nav li a {
+        color: #fff;
+        padding: 1rem 1rem;
+        font-size: 0.8rem;
+        margin: 0; }
+  .toggle {
+    display: none; } }
