@@ -15,7 +15,7 @@
         padding: 0.5rem 0;
         margin: 0.2rem;
         margin-top: 6rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: #fff;
     }
     button{
@@ -30,5 +30,11 @@
             background-color: #fff;
             color: #333;
         }
+    }
+}
+
+@media only  screen and (min-width: 600px){
+    #hero .title{
+        font-size: 3rem;
     }
 }
