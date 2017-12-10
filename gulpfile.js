@@ -98,6 +98,7 @@ gulp.task("html", () => {
         .pipe(htmlreplace({
             "css": ["dist/css/styles.min.css", "dist/css/flexboxgrid.min.css"],
             "js": "dist/js/main.min.js",
+            "logo": "<img src=\"dist/images/logo.png\">"
         }))
         .pipe(htmlMin({
             collapseWhitespace: true
@@ -107,8 +108,9 @@ gulp.task("html", () => {
 
 
 gulp.task("image", () => {
-    gulp.src("src/images/*.*")
+    gulp.src("src/images/*.png")
+        .pipe(plumber())
         //.pipe(imageMin())
         .pipe(gulp.dest("src/build/images"))
-        .pipe(gulp.dest("./dist/images/"));
+        .pipe(gulp.dest("./dist/images"));
 });
