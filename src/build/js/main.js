@@ -1,20 +1,18 @@
+"use strict";
+
 var message = "Awesome";
 
-console.log("Gulp is " + message);
-
+console.log("Gulp is   " + message);
 
 var dropdown = document.querySelector("#dropdown");
 var dropdownToggle = document.querySelector("#dropdownToggle");
 
 dropdownToggle.addEventListener("click", function () {
-    // var dropdown = e.srcElement.previousElementSibling;
+    // let dropdown = e.srcElement.previousElementSibling;
 
-    this.classList.toggle("change");
+    undefined.classList.toggle("change");
     dropdown.classList.toggle("open");
 });
-
-
-
 
 // Reference: http://www.html5rocks.com/en/tutorials/speed/animations/
 
@@ -46,7 +44,5 @@ window.addEventListener("scroll", function () {
         });
 
         ticking = true;
-
     }
-
 });

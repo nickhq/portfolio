@@ -27,7 +27,7 @@ gulp.task("sass", function () {
 gulp.task("babel", () => {
     gulp.src("src/js/*.js")
         .pipe(plumber())
-        //.pipe(babel({presets: ["env"]}))
+        .pipe(babel({presets: ["env"]}))
         .pipe(gulp.dest("src/build/js"));
 });
 
