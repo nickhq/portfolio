@@ -70,7 +70,10 @@ table {
 
 body {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  outline-color: #2ecc71; }
+  outline-color: #2ecc71;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #929292; }
 
 .box {
   border: 1px solid red; }
@@ -79,6 +82,9 @@ body {
   .wrapper {
     max-width: 960px;
     margin: 0 auto; } }
+
+.hobbies ul {
+  margin-left: 0.75rem; }
 
 .button {
   padding: 0.5rem 1rem;
@@ -100,6 +106,10 @@ body {
   font-weight: 700;
   padding: 0.5rem 0.1rem;
   margin: 0rem 0.1rem; }
+
+.list-raw li {
+  list-style-type: disc;
+  list-style-position: inside; }
 
 #hero {
   background: #575555 url("../images/bg-header-1.jpg") no-repeat center center;

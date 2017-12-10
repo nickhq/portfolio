@@ -1,6 +1,9 @@
 body {
     font-family: $font-primary;
     outline-color: $primary;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #929292;
      ::selection {
         // color: $primary;
     }
@@ -15,4 +18,10 @@ body {
         max-width: 960px;
         margin: 0 auto;
     }
+}
+
+.hobbies{
+   ul{
+       margin-left: 0.75rem;
+   }
 }
