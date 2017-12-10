@@ -1,5 +1,6 @@
 #hero{
-    background: #575555 url("../images/bg-header-1.jpg") no-repeat center;
+    background: #575555 url("../images/bg-header-1.jpg") no-repeat center center;
+    background-size: cover;
     text-align: center;
     padding: 8rem 0;
     min-height: calc(100vh);
