@@ -108,7 +108,7 @@ gulp.task("html", () => {
 
 
 gulp.task("image", () => {
-    gulp.src("src/images/*.png")
+    gulp.src("src/images/*.*")
         .pipe(plumber())
         //.pipe(imageMin())
         .pipe(gulp.dest("src/build/images"))
