@@ -89,6 +89,10 @@ body {
 section {
   padding: 2rem 1rem; }
 
+.subtitle {
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
 .button {
   padding: 0.5rem 1rem;
   text-transform: uppercase;
@@ -232,15 +236,17 @@ image {
 
 #about {
   background-color: #f2f2f2;
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
   #about .container-fluid {
     padding: 0 0.5rem; }
     #about .container-fluid img {
       position: relative;
       left: -0.5rem;
+      right: 0.5rem;
       top: 0;
       bottom: 0; }
     #about .container-fluid .icon {
-      display: block;
-      text-align: center;
-      font-size: 5rem; }
+      padding: 1rem; }
+  #about .about-entry {
+    padding: 0.5rem 0; }

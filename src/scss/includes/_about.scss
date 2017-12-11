@@ -1,19 +1,22 @@
 #about {
     background-color: #f2f2f2;
     padding: 0;
+    text-align: center;
     .container-fluid {
         padding: 0 0.5rem;
         img {
             position: relative;
             left: -0.5rem;
+            right: 0.5rem;
             top: 0;
             bottom: 0;
         }
 
         .icon{
-            display: block;
-            text-align: center;
-            font-size: 5rem;
+            padding: 1rem;
         }
+    }
+    .about-entry{
+        padding: 0.5rem 0;
     }
 }
