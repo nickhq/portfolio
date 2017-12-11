@@ -98,7 +98,8 @@ gulp.task("html", () => {
         .pipe(htmlreplace({
             "css": ["dist/css/styles.min.css", "dist/css/flexboxgrid.min.css"],
             "js": "dist/js/main.min.js",
-            "logo": "<img src=\"dist/images/logo.png\">"
+            "logo": "<img src=\"dist/images/logo.png\" alt=\"Logo\">",
+            "me": "<img src=\"dist/images/nixon.jpeg\" alt=\"Nixon Kosgei Profile\">",
         }))
         .pipe(htmlMin({
             collapseWhitespace: true
