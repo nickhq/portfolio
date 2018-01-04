@@ -127,6 +127,10 @@ section {
   text-transform: uppercase;
   font-weight: bold; }
 
+.tagline {
+  font-weight: 100;
+  font-style: italic; }
+
 .list-raw li {
   list-style-type: disc;
   list-style-position: inside; }
@@ -148,6 +152,17 @@ image {
       text-align: center;
       line-height: 30px;
       color: white; }
+
+.label {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 0.1rem 0.5rem; }
+
+hr {
+  background-color: #d5d5d5;
+  height: 1px;
+  border: none;
+  margin: 1rem 0; }
 
 #hero {
   background: #575555 url("../images/bg-header-1.jpg") no-repeat center center;
@@ -305,3 +320,12 @@ section#resume {
     border-width: 2rem;
     border-style: solid;
     border-color: #f2f2f2 transparent transparent transparent; }
+
+section#education .school {
+  margin-top: 3rem;
+  margin-bottom: 0rem; }
+  section#education .school:first-child {
+    margin-top: 0; }
+  section#education .school .label {
+    display: inline-block;
+    margin: 0.5rem 0; }

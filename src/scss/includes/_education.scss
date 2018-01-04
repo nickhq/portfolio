@@ -1,0 +1,13 @@
+section#education{
+    .school{
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+        &:first-child{
+            margin-top: 0;
+        }
+       .label{
+        display: inline-block;
+        margin: 0.5rem 0;
+       }
+    }
+}

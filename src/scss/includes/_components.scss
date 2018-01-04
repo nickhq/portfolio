@@ -43,6 +43,10 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+.tagline{
+    font-weight: 100;
+    font-style: italic;
+}
 
 .list-raw {
     li {
@@ -71,4 +75,18 @@ image {
             color: white;
         }
     }
+}
+
+.label{
+    background-color: $primary;
+    color: #fff;
+    padding: 0.1rem 0.5rem;
+}
+
+hr{
+    background-color: #d5d5d5;
+    height: 1px;
+    border: none;
+    margin: 1rem 0;
+    
 }
