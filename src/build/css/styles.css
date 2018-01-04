@@ -291,6 +291,17 @@ image {
 
 section#resume {
   background-color: #f2f2f2;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   section#resume .button {
-    display: inline-block; }
+    display: inline-block;
+    margin: 3rem auto; }
+  section#resume::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -2rem;
+    border-width: 2rem;
+    border-style: solid;
+    border-color: #f2f2f2 transparent transparent transparent; }
