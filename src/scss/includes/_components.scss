@@ -7,6 +7,7 @@
     outline-color: $primary;
     color: $text-primary;
     cursor: pointer;
+    transition: 300ms;
     &:hover {
         background-color: #fff;
         color: $primary;
@@ -15,7 +16,16 @@
         text-decoration: none;
     }
     &.is-large {
-        padding: 1rem 1.5rem;
+        padding: 1rem 3rem;
+        border-width: 2px;
+    }
+    &.is-outlined{
+        background-color: transparent;
+        color: $primary;
+        &:hover {
+            background-color: $primary;
+            color: #fff;
+        }
     }
 }
 
