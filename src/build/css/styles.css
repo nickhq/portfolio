@@ -89,10 +89,6 @@ body {
 section {
   padding: 2rem 1rem; }
 
-.subtitle {
-  font-size: 1.5rem;
-  text-transform: uppercase; }
-
 .button {
   padding: 0.5rem 1rem;
   text-transform: uppercase;
@@ -103,8 +99,12 @@ section {
   color: #ffffff;
   cursor: pointer; }
   .button:hover {
-    background-color: fade(#2ecc71, 80%);
-    border-color: fade(#2ecc71, 80%); }
+    background-color: #fff;
+    color: #2ecc71; }
+  .button.is-link {
+    text-decoration: none; }
+  .button.is-large {
+    padding: 1rem 1.5rem; }
 
 .title {
   text-transform: uppercase;
@@ -114,12 +114,32 @@ section {
   padding: 0.5rem 0.1rem;
   margin: 0rem 0.1rem; }
 
+.subtitle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold; }
+
 .list-raw li {
   list-style-type: disc;
   list-style-position: inside; }
 
 image {
   max-width: 100%; }
+
+.progress {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: #f3f3f2; }
+  .progress .bar {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #2ecc71; }
+    .progress .bar .label {
+      text-align: center;
+      line-height: 30px;
+      color: white; }
 
 #hero {
   background: #575555 url("../images/bg-header-1.jpg") no-repeat center center;
@@ -250,3 +270,13 @@ image {
       padding: 1rem; }
   #about .about-entry {
     padding: 0.5rem 0; }
+
+#skills .content {
+  padding: 1rem 0; }
+
+#skills .button {
+  margin: 0.5rem 0 0.5rem;
+  display: inline-block; }
+
+#skills .skill {
+  margin: 2rem 0; }
