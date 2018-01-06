@@ -420,22 +420,6 @@
   <!-- build:js -->
   <script src="build/js/main.js"></script>
   <!-- endbuild -->
-  <script>
-     var elem = document.getElementByI("myBar"); 
-    function move(el, max) {
-   
-    var width = 1;
-    var id = setInterval(frame, 100);
-    function frame() {
-        if (width >= max) {
-            clearInterval(id);
-        } else {
-            width++; 
-            el.style.width = width + '%'; 
-            document.getElementById("label").innerHTML = width * 1 + '%';
-        }
-    }
-}
   </script>
 </body>
 
