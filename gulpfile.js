@@ -100,8 +100,8 @@ gulp.task("html", () => {
             "js": "dist/js/main.min.js",
             "logo": "<img src=\"dist/images/logo.png\" alt=\"Logo\">",
             "me": "<img src=\"dist/images/nixon.jpeg\" alt=\"Nixon Kosgei Profile\">",
-            "addIcon": "<img src=\"/dist/images/ic_add_white_48dp.png\" alt=\"View more\">",
-            "project1": "<img src=\"/dist/images/project.png\" alt=\"Project Image\">"
+            "addIcon": "<img src=\"dist/images/ic_add_white_48dp.png\" alt=\"View more\">",
+            "project1": "<img src=\"dist/images/project.png\" alt=\"Project Image\">"
         }))
         .pipe(htmlMin({
             collapseWhitespace: true
