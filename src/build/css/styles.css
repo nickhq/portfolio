@@ -406,3 +406,10 @@ section.contact {
 .form-group .textarea {
   width: 100%;
   resize: vertical; }
+
+.footer {
+  background-color: #191f21;
+  padding: 2rem 1rem;
+  text-align: center; }
+  .footer .icons a {
+    margin: 0.2rem 0.5rem; }
