@@ -99,12 +99,12 @@ a {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 100%;
   right: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  display: none; }
+  transition: 500ms; }
   .overlay.is-open {
-    display: block; }
+    left: 0; }
 
 .button {
   padding: 0.5rem 1rem;
