@@ -1,14 +1,8 @@
-const message = "Awesome";
-
-console.log(`Gulp is   ${message}`);
-
-
 let dropdown = document.querySelector("#dropdown");
 let dropdownToggle = document.querySelector("#dropdownToggle");
 
-dropdownToggle.addEventListener("click", () => {
-    // let dropdown = e.srcElement.previousElementSibling;
-
+dropdownToggle.addEventListener("click", function(){
+   
     this.classList.toggle("change");
     dropdown.classList.toggle("open");
 });

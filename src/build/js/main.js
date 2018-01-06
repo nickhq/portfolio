@@ -1,16 +1,11 @@
 "use strict";
 
-var message = "Awesome";
-
-console.log("Gulp is   " + message);
-
 var dropdown = document.querySelector("#dropdown");
 var dropdownToggle = document.querySelector("#dropdownToggle");
 
 dropdownToggle.addEventListener("click", function () {
-    // let dropdown = e.srcElement.previousElementSibling;
 
-    undefined.classList.toggle("change");
+    this.classList.toggle("change");
     dropdown.classList.toggle("open");
 });
 
