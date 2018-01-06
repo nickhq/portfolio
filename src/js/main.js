@@ -1,10 +1,13 @@
 let dropdown = document.querySelector("#dropdown");
 let dropdownToggle = document.querySelector("#dropdownToggle");
+const overlay = document.querySelector(".overlay");
 
 dropdownToggle.addEventListener("click", function(){
    
     this.classList.toggle("change");
     dropdown.classList.toggle("open");
+    overlay.classList.toggle("is-open");
+
 });
 
 

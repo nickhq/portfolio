@@ -2,11 +2,13 @@
 
 var dropdown = document.querySelector("#dropdown");
 var dropdownToggle = document.querySelector("#dropdownToggle");
+var overlay = document.querySelector(".overlay");
 
 dropdownToggle.addEventListener("click", function () {
 
     this.classList.toggle("change");
     dropdown.classList.toggle("open");
+    overlay.classList.toggle("is-open");
 });
 
 // Reference: http://www.html5rocks.com/en/tutorials/speed/animations/
