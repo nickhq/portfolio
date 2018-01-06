@@ -330,6 +330,8 @@ hr {
   background-color: #f2f2f2;
   padding: 0;
   text-align: center; }
+  #about .my-image {
+    line-height: 1; }
   #about .container-fluid {
     padding: 0 0.5rem; }
     #about .container-fluid img {

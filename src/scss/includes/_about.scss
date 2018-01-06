@@ -2,6 +2,9 @@
     background-color: $bg-base;
     padding: 0;
     text-align: center;
+    .my-image{
+        line-height: 1;
+    }
     .container-fluid {
         padding: 0 0.5rem;
         img {
